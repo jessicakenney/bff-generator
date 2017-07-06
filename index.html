@@ -13,14 +13,25 @@
       <div class="jumbotron">
         <h1>Film BFF Generator</h1>
       </div>
-
       <div class="row">
 
         <div class="col-md-6" id="userInfo">
-          <form>
+          <h2>Fill out Personal Profile</h2>
+          <form id="bff-generator">
+            <div class="checkbox" class="form-inline">
+              <label>
+                <input id="female" type="checkbox">Female
+              </label>
+              <label>
+                <input id="male" type="checkbox">Male
+              </label>
+            </div>
             <div class="form-group">
-              <label for="height">Height(inches)</label>
-              <input id="height" class="form-control" type="text">
+              <label for="pet">Favorite pet</label>
+              <select class="form-control" id="pet">
+                <option>puppy</option>
+                <option>kitty</option>
+              </select>
             </div>
             <h5>Select Hair Color</h5>
                 <div class="radio">
@@ -35,10 +46,16 @@
                   <label>
                     <input type="radio" name="hair" value="red">Red</label>
                 </div>
-            <button type="submit" class="btn">Submit your information</button>
+                <h5>Select Age</h5>
+                <select class="form-control" id="age">
+                  <option value="1">(1-21)</option>
+                  <option value="2">(21-35)</option>
+                  <option value="3">(35 & Up)</option>
+                </select>
+                <br>
+                <br>
+            <button type="submit" class="btn">Generate your BFF</button>
         </form>
-
-
 
         </div>
         <div class="col-md-6" id="bff">
